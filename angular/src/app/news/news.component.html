@@ -1,0 +1,24 @@
+<div class="col-md-6">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Tiêu đề</th>
+      <th>Mô tả ngắn</th>
+      <th>Nội dung</th>
+      <th>Thể loại</th>
+      <th>Thao tác</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let newa of news">
+            <td>{{newa.title}}</td>
+            <td>{{newa.shortDescription}}</td>
+            <td>{{newa.content}}</td> 
+            <td>{{newa.categoryName}}</td> 
+            <td><button class="btn btn-success" (click)="updateNew(newa)">Update</button></td>
+            <li><a  routerLink="/addnew" class="nav-link">Add New</a></li>
+            </tr>
+    </tbody>
+      </table>
+  
+    </div>

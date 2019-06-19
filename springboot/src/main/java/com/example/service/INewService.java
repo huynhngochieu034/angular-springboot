@@ -1,0 +1,11 @@
+package com.example.service;
+
+import com.example.dto.CategoryDTO;
+import com.example.dto.NewDTO;
+
+import java.util.List;
+
+public interface INewService {
+    List<NewDTO> findAll();
+    NewDTO insert(NewDTO newDTO);
+}
